@@ -112,6 +112,7 @@ header .header-menu li{
 header .header-menu li:hover{
     color: white;
     cursor: pointer;
+    padding-bottom: 5px;
     border-bottom: 2px solid #2e8b57;
 }
 
@@ -120,14 +121,30 @@ header .header-menu li:hover{
 
 .core-page{
     height: calc(100% - 50px);
-    background-color: red;
     flex-grow: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     overflow: auto;
 }
+
+.title-core-page h1{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.singer img{
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
 
 /* Footer */
 
@@ -206,6 +223,10 @@ footer {
     header .header-menu{
         display: flex;
         justify-content: center;
+    }
+
+    .title-core-page h1{
+        margin-left: 80px;
     }
 
 
