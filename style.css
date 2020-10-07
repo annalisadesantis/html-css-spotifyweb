@@ -50,7 +50,7 @@ aside .btn{
 
 aside .btn-primary:hover{
     background-color: #140000;
-    border-left: 3px solid #808000;
+    border-left: 3px solid #2e8b57;
 }
 
 aside .third-side{
@@ -58,6 +58,7 @@ aside .third-side{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 aside .bi-arrow-down-circle{
@@ -70,7 +71,7 @@ aside .bi-person{
 
 hr.solid {
     border-top: 1px solid #999;
-    min-width: 60px;
+    min-width: 90%;
 }
 
 aside span{
@@ -89,14 +90,37 @@ main{
 
 header {
     height: 50px;
-
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+header .header-menu{
+    display: none;
+}
+
+header .header-menu li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    color: #c9c0bb;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+header .header-menu li:hover{
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid #2e8b57;
+}
+
 
 /* Core Page */
 
 .core-page{
     height: calc(100% - 50px);
-
+    background-color: red;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -148,12 +172,14 @@ footer {
     }
 
     aside .second-aside{
+        width: calc(100% - 20px);
         align-items: flex-start;
         margin-left: 20px;
     }
 
     aside .third-side{
-        justify-content: flex-end;
+        width: calc(100% - 20px);
+        align-items: flex-start;
         margin-left: 20px;
     }
 
@@ -164,5 +190,23 @@ footer {
         margin-left: 5px;
         color: #999;
     }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    header .header-menu{
+        display: block;
+    }
+
+    header .header-menu{
+        display: flex;
+        justify-content: center;
+    }
+
 
 }
