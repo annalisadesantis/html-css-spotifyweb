@@ -1,5 +1,61 @@
-
+/* Proprietà Generali */
 
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+#spotify-container{
+    height: calc(100vh - 40% - 60%);
+    display: flex;
+}
+
+/* Aside Bar */
+
+aside{
+    width: 20%;
+    height: calc(100vh - 80px);
+    background-color: #140000;
+    flex-shrink: 0;
+}
+
+/* Main Content */
+main{
+    width: 80%;
+    height: calc(100vh - 80px);
+    background-color: yellow;
+}
+
+/* Intestazione */
+
+header {
+    height: 50px;
+    background-color: red;
+}
+
+/* Core Page */
+
+
+
+/* Footer */
+
+footer {
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 300px;
+    background-color: purple;
+}
+
+.footer-center {
+    width: 800px;
+    background-color: lightblue;
+}
+
+.footer-right {
+    width: 200px;
+    background-color: white;
 }
