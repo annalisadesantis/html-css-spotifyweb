@@ -157,8 +157,30 @@ footer {
 
 .footer-left {
     width: 300px;
-    background-color: purple;
+    background-color: #282828;
 }
+
+
+.footer-left img{
+    margin: 20px 6px 20px 8px;
+    max-width: 40px;
+    max-height: 40px;
+
+}
+
+.footer-left i{
+    color: white;
+    font-size: 10px;
+
+}
+
+.footer-left span{
+    display: none;
+    font-size: 12px;
+
+}
+
+
 
 .footer-center {
     width: 800px;
@@ -227,6 +249,10 @@ footer {
 
     .title-core-page h1{
         margin-left: 80px;
+    }
+
+    .footer-left span{
+        display: block;
     }
 
 
