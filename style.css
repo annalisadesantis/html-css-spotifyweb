@@ -22,7 +22,6 @@ main{
     width: 80%;
     height: calc(100vh - 80px);
     background-color: yellow;
-    display: flex;
 }
 
 /* Intestazione */
@@ -35,6 +34,7 @@ header {
 /* Core Page */
 
 .core-page{
+    height: calc(100% - 50px);
     background-color: blue;
     flex-grow: 1;
     display: flex;
