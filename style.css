@@ -15,22 +15,27 @@ aside{
     height: calc(100vh - 80px);
     background-color: #140000;
     flex-shrink: 0;
-    flex-direction: column;
-}
-
-aside .box-aside{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 aside .icon-spotify{
     max-width: 40px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+aside .logo-spotify{
+    display: none;
 }
 
 aside .second-aside{
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 aside .btn-primary{
@@ -49,14 +54,29 @@ aside .btn-primary:hover{
 }
 
 aside .third-side{
-    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-aside hr{
-    width: 50px;
-    color: white;
-    height: 3px;
+aside .bi-arrow-down-circle{
+    cursor: pointer;
 }
+
+aside .bi-person{
+    cursor: pointer;
+}
+
+hr.solid {
+    border-top: 1px solid #999;
+    min-width: 60px;
+}
+
+aside span{
+    display: none;
+}
+
 
 /* Main Content */
 main{
@@ -107,4 +127,42 @@ footer {
 .footer-right {
     width: 200px;
     background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    aside .icon-spotify{
+        display: none;
+    }
+
+    aside .logo-spotify{
+        display: block;
+        max-width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside .second-aside{
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    aside .third-side{
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+
+    aside span{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 5px;
+        color: #999;
+    }
+
 }
