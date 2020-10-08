@@ -74,6 +74,11 @@ hr.solid {
     min-width: 90%;
 }
 
+aside hr{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 aside span{
     display: none;
 }
@@ -191,7 +196,6 @@ footer {
     display: none;
     font-size: 12px;
     color: white;
-    margin-right: 10px;
 }
 
 .footer-center {
@@ -277,6 +281,10 @@ footer {
         color: #999;
     }
 
+    aside hr{
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -312,6 +320,34 @@ footer {
 
     .footer-right svg{
         margin: 0 6px;
+    }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80%;
+      margin: 0 8px;
+      -webkit-appearance: none;
+      background-color: #a9a9a9;
+      border-radius: 10px;
+    }
+/*
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 8px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    } */
+
+    input[type='range']::-webkit-slider-thumb {
+      width: 60%;
+      -webkit-appearance: none;
+      height: 8px;
+      cursor: pointer;
+      background: #808080;
+      box-shadow: -80px 0 0 80px #999;
     }
 
 }
