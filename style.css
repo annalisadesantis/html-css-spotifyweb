@@ -80,11 +80,20 @@ aside span{
 
 
 /* Main Content */
+
 main{
     width: 80%;
     height: calc(100vh - 80px);
     background-color: #967117;
+    overflow: auto;
+    padding-bottom: 100px;
 }
+
+.container-main{
+    max-width: 95%;
+    margin: auto;
+}
+
 
 /* Intestazione */
 
@@ -119,30 +128,33 @@ header .header-menu li:hover{
 
 /* Core Page */
 
-.core-page{
-    height: calc(100% - 50px);
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    overflow: auto;
-}
-
-.title-core-page h1{
+main h1{
     color: white;
     font-weight: 700;
     font-size: 30px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.core-page-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .singer img{
     width: 140px;
     height: 140px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: 10px 10px;
     border-radius: 50%;
+}
+
+.singer p{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 
@@ -156,7 +168,7 @@ footer {
 }
 
 .footer-left {
-    width: 300px;
+    width: 500px;
     background-color: #282828;
 }
 
@@ -171,13 +183,11 @@ footer {
 .footer-left i{
     color: white;
     font-size: 10px;
-
 }
 
 .footer-left span{
     display: none;
     font-size: 12px;
-
 }
 
 
@@ -191,6 +201,7 @@ footer {
     width: 200px;
     background-color: white;
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -234,6 +245,11 @@ footer {
 
 @media screen and (min-width: 992px) {
 
+    .container-main{
+        max-width: 95%;
+        margin: auto;
+    }
+
     .navbar-toggler {
         display: none;
     }
@@ -245,10 +261,6 @@ footer {
     header .header-menu{
         display: flex;
         justify-content: center;
-    }
-
-    .title-core-page h1{
-        margin-left: 80px;
     }
 
     .footer-left span{
