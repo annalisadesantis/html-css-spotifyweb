@@ -31,6 +31,10 @@ aside .logo-spotify{
     display: none;
 }
 
+aside svg{
+    vertical-align: middle;
+}
+
 aside .second-aside{
     display: flex;
     flex-direction: column;
@@ -100,8 +104,7 @@ aside h5{
 aside .button-playlist{
     background-color: #140000;
     border: none;
-    padding: 0;
-    margin-top: 10px;
+    padding: 10px 0;
 }
 
 aside .button-playlist:hover{
@@ -313,9 +316,10 @@ footer {
         margin-left: 0;
     }
 
-
     aside .playlist{
-        display: block;
+        display: flex;
+        flex-direction: column;
+
     }
 
 }
