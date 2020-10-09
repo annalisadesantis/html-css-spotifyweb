@@ -41,16 +41,16 @@ aside .second-aside{
 aside .btn-primary{
     background-color: #140000;
     border: none;
-    border-left: 3px solid #140000;
 }
 
 aside .btn{
     border-radius: 0;
+    padding: 6px 0;
 }
 
 aside .btn-primary:hover{
     background-color: #140000;
-    border-left: 3px solid #2e8b57;
+    border-bottom: 2px solid #2e8b57;
 }
 
 aside .third-side{
@@ -82,6 +82,33 @@ aside hr{
 aside span{
     display: none;
 }
+
+aside .playlist{
+    display: none;
+}
+
+aside .playlist{
+    margin-top: 10px;
+}
+
+aside h5{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+aside .button-playlist{
+    background-color: #140000;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+aside .button-playlist:hover{
+    background-color: #140000;
+    border-bottom: 2px solid #2e8b57;
+}
+
 
 
 /* Main Content */
@@ -279,10 +306,16 @@ footer {
         font-weight: 300;
         margin-left: 5px;
         color: #999;
+        vertical-align: center;
     }
 
     aside hr{
         margin-left: 0;
+    }
+
+
+    aside .playlist{
+        display: block;
     }
 
 }
@@ -298,6 +331,7 @@ footer {
         display: none;
     }
 
+
     header .header-menu{
         display: block;
     }
@@ -309,6 +343,7 @@ footer {
 
     .footer-left span{
         display: block;
+        margin-right: 5px;
     }
 
     .footer-right{
@@ -324,6 +359,8 @@ footer {
 
 }
 
+/* Slide Bar Range */
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
@@ -331,15 +368,8 @@ footer {
       margin: 0 8px;
       -webkit-appearance: none;
       background-color: #a9a9a9;
-      border-radius: 10px;
+      border-radius: 20px;
     }
-/*
-    input[type='range']::-webkit-slider-runnable-track {
-      height: 8px;
-      -webkit-appearance: none;
-      color: #13bba4;
-      margin-top: -1px;
-    } */
 
     input[type='range']::-webkit-slider-thumb {
       width: 60%;
