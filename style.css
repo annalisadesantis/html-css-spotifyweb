@@ -202,6 +202,20 @@ footer {
     justify-content: space-between;
 }
 
+footer svg:hover{
+    cursor: pointer;
+    fill: #2e8b57;
+}
+
+footer i:hover{
+    cursor: pointer;
+    color: #2e8b57;
+}
+
+footer img:hover{
+    cursor: pointer;
+}
+
 .footer-left {
     /* width: 500px; */
     background-color: #282828;
