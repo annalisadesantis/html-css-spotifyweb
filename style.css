@@ -182,6 +182,7 @@ main h1{
     height: 140px;
     margin: 10px 10px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .singer p{
